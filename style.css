@@ -1,0 +1,82 @@
+body, div, p, h1, ul, li, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --main-bg-color:  #171E2A;
+  --bg-intro: #1C2431;
+  --footer-bg: 	#0b1523;
+  --testimonials-bg: #202a3c;
+  --Cyan: #65e2d9 ;
+  --Blue: 	#339ecc;
+  --Light-Red: 	#ff4242;
+  --white: #ffffff;
+}
+
+body{
+  background-color: var(--bg-intro);
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+#menu-nav ul {
+  display: flex;
+}
+
+#menu-nav ul li {
+  padding: 20px;
+}
+
+img {
+  display: block;
+  width: 100% ;
+}
+
+#intro {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#intro button {
+  border-radius: 20px;
+  border: none;
+  max-width: 200px;
+  padding: 10px 40px;
+  background-color: var(--Cyan);
+  display: block;
+  width: 100% ;
+  margin: 0 auto;
+}
+
+#services img {
+  width: 60px;
+  margin: 0 auto;
+}
+
+#services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  padding: 60px;
+}
