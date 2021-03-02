@@ -78,5 +78,27 @@ img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin: 0 auto;
-  padding: 60px;
+  padding: 90px;
+  background-color: var(--main-bg-color);
+}
+
+#location {
+  display: flex;
+  padding: 0 90px;
+  align-items: center;
+  background-color: var(--main-bg-color);
+}
+
+#testimonials img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+#testimonials {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  background-color: var(--footer-bg);
 }
