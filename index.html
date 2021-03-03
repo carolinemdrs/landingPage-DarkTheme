@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
 </head>
@@ -22,14 +23,16 @@
     </nav>
   </header>
 
-  <section id="intro">
-    <div>
-      <img src="./images/illustration-intro.png" />
+  <section id="intro-bg">
+    <div id="intro">
+      <div>
+        <img src="./images/illustration-intro.png" />
+      </div>
+      <h1>  All your files in one secure location,<br> accessible anywhere.</h1>
+      <p>Fylo stores all your most important files in one secure location.<br> Access them wherever 
+        you need, share and collaborate with<br> friends family, and co-workers.</p>
+        <button>Get Started</button>
     </div>
-    <h1>  All your files in one secure location,<br> accessible anywhere.</h1>
-    <p>Fylo stores all your most important files in one secure location.<br> Access them wherever 
-      you need, share and collaborate with<br> friends family, and co-workers.</p>
-      <button>Get Started</button>
     </section>
 
   <section id="services">
@@ -40,19 +43,19 @@
         files follow you everywhere.</p> 
     </div>
     <div class="services-block">
-      <img src="images/icon-security.svg" />
+      <img src="images/icon-security.svg"/>
       <h4>Security you can trust</h4>
       <p>2-factor authentication and user-controlled encryption are just a couple of the security 
         features we allow to help secure your files.</p> 
     </div>
     <div class="services-block">
-      <img src="images/icon-collaboration.svg" />
+      <img src="images/icon-collaboration.svg"/>
       <h4>Real-time collaboration</h4>
       <p>Securely share files and folders with friends, family and colleagues for live collaboration. 
         No email attachments required.</p> 
     </div>
     <div class="services-block">
-      <img src="images/icon-any-file.svg" />
+      <img src="images/icon-any-file.svg"/>
       <h4>Store any type of file</h4>
       <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
         file types to be securely stored and shared.</p> 
@@ -62,17 +65,16 @@
     <div>
       <img src="./images/illustration-stay-productive.png" />
     </div>
-    <div>
-      <h1>  
-        Stay productive, <br> wherever you are</h1> 
-      <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+    <div id="text">
+      <h1> Stay productive, <br> wherever you are</h1> <br>
+      <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p><br>
       <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-      <p>See how Fylo works</p>
+      <p id="button-location"><a>See how Fylo works</a><img src="images/icon-arrow.svg"></p>
   </div>
   </section>
 
   <section id="testimonials">
-    <div>
+    <div class="testimonials-card">
       <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
       <div>
         <img src="images/profile-1.jpg"/>
@@ -81,7 +83,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="testimonials-card">
       <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
       <div>
         <img  src="images/profile-2.jpg"/>
@@ -90,7 +92,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="testimonials-card">
       <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
       <div>
         <img  src="images/profile-3.jpg"/>
@@ -99,38 +101,48 @@
       </div>
     </div>
   </section>
-  <div>
-   <h2> Get early access today</h2>
-    <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-    <input>
-    <button>Get Started For Free</button>
-  </div>
+  <div id="card">
+  <div id="card-form" >
+      <h2> Get early access today</h2>
+        <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        <div id="send">
+          <input>
+          <button>Get Started For Free</button>
+       </div>
+      </div>
   <footer>
-    <div>
-      <img/>
+    <div id="text">
+      <img src="images/logo.svg"/>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
     </div>
-    <div>
-      +1-543-123-4567
-      example@fylo.com
+    <div id="contact">
+      <div class="contact-item">
+        <img src="images/icon-phone.svg"/>
+        +1-543-123-4567
+      </div>
+      <div class="contact-item">
+       <img src="images/icon-email.svg"/>
+        example@fylo.com
+      </div>
     </div>
 
-    <div>
-      About Us
-      Jobs
-      Press
-      Blog
+    <div id="info">
+      <p> About Us</p>
+      <p>Jobs</p>
+      <p> Press</p>
+      <p>Blog</p>
     </div>
 
-    <div>
-      Contact Us
-      Terms
-      Privacy
+    <div id="terms">
+      <p> Contact Us</p>
+      <p>Terms</p>
+      <p>Privacy</p>
     </div>
 
-    <div>
-      redes
-      
+    <div id="social-media">
+     <p> <i class="fab fa-facebook"></i></p>
+     <p> <i class="fab fa-twitter"></i></p>
+      <p> <i class="fab fa-instagram"></i> </p>  
     </div>
 
   </footer>
